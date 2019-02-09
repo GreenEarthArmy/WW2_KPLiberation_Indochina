@@ -12,16 +12,16 @@ Optional Mods:
 /* - Support classnames.
 Each of these should be unique, the same classnames for different purposes may cause various unpredictable issues with player actions. Or not, just don't try!	*/
 FOB_typename = "Land_GeneralServiceTent";									// This is the main FOB HQ building. 																									Default is "Land_Cargo_HQ_V1_F".
-FOB_box_typename = "fow_v_type97_truck_utility_ija";							// This is the FOB as a container. 																										Default is "B_Slingload_01_Cargo_F".
+FOB_box_typename = "fow_v_type97_truck_ija";							// This is the FOB as a container. 																										Default is "B_Slingload_01_Cargo_F".
 FOB_truck_typename = "fow_v_type97_truck_utility_ija";								// This is the FOB as a vehicle.																										Default is "B_Truck_01_box_F".
 Arsenal_typename = "B_supplyCrate_F";									// This is the virtual arsenal as portable supply crates.  																				Default is "B_supplyCrate_F".
-Respawn_truck_typename = "fow_v_type95_HaGo";						// This is the mobile respawn (and medical) truck. 																						Default is "B_Truck_01_medical_F".
-huron_typename = "fow_v_type95_HaGo";						// This is Spartan 01, a multipurpose mobile respawn as a helicopter. 																	Default is "B_Heli_Transport_03_unarmed_F".
+Respawn_truck_typename = "fow_v_type97_truck_open_ija";						// This is the mobile respawn (and medical) truck. 																						Default is "B_Truck_01_medical_F".
+huron_typename = "fow_v_type97_truck_fuel_ija";						// This is Spartan 01, a multipurpose mobile respawn as a helicopter. 																	Default is "B_Heli_Transport_03_unarmed_F".
 crewman_classname = "fow_s_ija_crewman";											// This defines the crew for vehicles. 																									Default is "B_crew_F".
 pilot_classname = "fow_s_ija_pilot";										// This defines the pilot for helicopters. 																								Default is "B_Helipilot_F".
 KP_liberation_little_bird_classname = "B_Heli_Light_01_F"; 				// These are the little birds which spawn on the Freedom or at Chimera base.															Default is "B_Heli_Light_01_F".
 KP_liberation_boat_classname = "B_Boat_Transport_01_F"; 				// These are the boats which spawn at the stern of the Freedom.																			Default is "B_Boat_Transport_01_F".
-KP_liberation_truck_classname = "fow_v_type97_truck_ija";				// These are the trucks which are used in the logistic convoy system.																	Default is "B_Truck_01_transport_F".
+KP_liberation_truck_classname = "fow_v_type97_truck_open_ija";				// These are the trucks which are used in the logistic convoy system.																	Default is "B_Truck_01_transport_F".
 KP_liberation_small_storage_building = "ContainmentArea_02_sand_F";		// A small storage area for resources.																									Default is "ContainmentArea_02_sand_F".
 KP_liberation_large_storage_building = "ContainmentArea_01_sand_F";		// A large storage area for resources.																									Default is "ContainmentArea_01_sand_F".
 KP_liberation_recycle_building = "Land_Repair_center";					// The building defined to unlock FOB recycling functionality.																			Default is "Land_CarService_F".

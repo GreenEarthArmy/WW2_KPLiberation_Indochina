@@ -17,7 +17,9 @@ KP_liberation_medical_vehicles = [
 	"RHS_UH60M_MEV_d",
 	"RHS_UH60M_MEV2_d",
 	"UK3CB_BAF_LandRover_Amb_FFR_Green_A_MTP",
-	"UK3CB_BAF_LandRover_Amb_FFR_Sand_A_DDPM"
+	"UK3CB_BAF_LandRover_Amb_FFR_Sand_A_DDPM",
+	"LIB_Zis5v_Med",
+	"fow_v_type97_truck_utility_ija"
 ];
 
 // Classnames of ACE3 crates (which have to be in the unit preset as well).
@@ -99,9 +101,9 @@ GRLIB_color_friendly = "ColorBLUFOR";																			// Friendly sector marke
 GRLIB_color_enemy = "ColorOPFOR";																				// Enemy sector marker color.
 GRLIB_color_enemy_bright = "ColorRED";																			// Enemy sector marker color (activated).
 
-GRLIB_fob_range = 125;																							// Build range around the main FOB building.
+GRLIB_fob_range = 200;																							// Build range around the main FOB building.
 GRLIB_halo_altitude = 2500;																						// Altitude in metres for the HALO jump.
-GRLIB_secondary_missions_costs = [15, 10, 8];																	// Intel price for the secondary missions [FOB hunting, Convoy ambush, SAR].
+GRLIB_secondary_missions_costs = [5, 3, 2];																	// Intel price for the secondary missions [FOB hunting, Convoy ambush, SAR].
 GRLIB_secondary_objective_impact = 0.6;																			// The percentage impact against enemy combat readiness for a successful FOB hunt.
 GRLIB_recycling_percentage = 0.5;																				// Percentage of resources you get back from recycling.
 KP_liberation_production_interval = 30				/ GRLIB_resources_multiplier;								// Time in minutes until a production process is finished, when resources multiplier is set to 1.
@@ -403,6 +405,10 @@ KP_liberation_allowed_items_extension = [
 /* - Configuration settings for crates transported by vehicles.
 Format = ["classname", distance behind vehicle to unload crate, attachTo positions for each box],	*/
 box_transport_config = [
+	["fow_v_type97_truck_open_ija", -4.2, [0,-0.4,0], [0,-1.4,0] ,[0,-2.4,0]],
+	["fow_v_type97_truck_open_ija", -4.2, [0,-0.4,0], [0,-1.4,0] ,[0,-2.4,0]],
+	["LIB_US6_Tent", -4.2, [0,-0.4,0], [0,-1.4,0] ,[0,-2.4,0]],
+	["LIB_US6_Open_Cargo", -4.2, [0,-0.4,0], [0,-1.4,0] ,[0,-2.4,0]],
 	["C_Offroad_01_F", -6.5, [0,-1.7,0.4]],
 	["I_G_Offroad_01_F", -6.5, [0,-1.7,0.4]],
 	["O_G_Offroad_01_F", -6.5, [0,-1.7,0.4]],
@@ -509,7 +515,9 @@ ai_resupply_sources = [
 	"rhsusf_M977A4_AMMO_BKIT_usarmy_wd",
 	"rhsusf_M977A4_AMMO_BKIT_M2_usarmy_d",
 	"rhsusf_M977A4_AMMO_BKIT_M2_usarmy_wd",
-	"rhs_gaz66_ammo_msv"
+	"rhs_gaz66_ammo_msv",
+	"fow_v_type97_truck_utility_ija",
+	"LIB_US6_Ammo"
 ];
 
 // Everything that can resupply other vehicles.
@@ -528,7 +536,9 @@ vehicle_repair_sources = [
 	"rhsusf_M977A4_REPAIR_BKIT_usarmy_wd",
 	"rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_d",
 	"rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_wd",
-	"RHS_Ural_Repair_VDV_01"
+	"RHS_Ural_Repair_VDV_01",
+	"fow_v_type97_truck_utility_ija",
+	"LIB_Zis6_Parm"
 ];
 
 vehicle_rearm_sources = [
@@ -545,7 +555,9 @@ vehicle_rearm_sources = [
 	"rhsusf_M977A4_AMMO_BKIT_usarmy_wd",
 	"rhsusf_M977A4_AMMO_BKIT_M2_usarmy_d",
 	"rhsusf_M977A4_AMMO_BKIT_M2_usarmy_wd",
-	"rhs_gaz66_ammo_msv"
+	"rhs_gaz66_ammo_msv",
+	"fow_v_type97_truck_utility_ija",
+	"LIB_US6_Ammo"
 ];
 
 vehicle_refuel_sources = [
@@ -562,7 +574,9 @@ vehicle_refuel_sources = [
 	"rhsusf_M978A4_usarmy_wd",
 	"rhsusf_M978A4_BKIT_usarmy_d",
 	"rhsusf_M978A4_BKIT_usarmy_wd",
-	"RHS_Ural_Fuel_VDV_01"
+	"RHS_Ural_Fuel_VDV_01",
+	"fow_v_type97_truck_fuel_ija",
+	"LIB_Zis5v_Fuel"
 ];
 
 // Classnames of boats, so they can be built on water.
