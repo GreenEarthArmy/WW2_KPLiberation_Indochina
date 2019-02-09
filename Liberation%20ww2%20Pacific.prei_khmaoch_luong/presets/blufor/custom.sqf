@@ -12,11 +12,11 @@ Optional Mods:
 /* - Support classnames.
 Each of these should be unique, the same classnames for different purposes may cause various unpredictable issues with player actions. Or not, just don't try!	*/
 FOB_typename = "Land_GeneralServiceTent";									// This is the main FOB HQ building. 																									Default is "Land_Cargo_HQ_V1_F".
-FOB_box_typename = "fow_v_type97_truck_ija";							// This is the FOB as a container. 																										Default is "B_Slingload_01_Cargo_F".
+FOB_box_typename = "fow_v_type97_truck_utility_ija";							// This is the FOB as a container. 																										Default is "B_Slingload_01_Cargo_F".
 FOB_truck_typename = "fow_v_type97_truck_utility_ija";								// This is the FOB as a vehicle.																										Default is "B_Truck_01_box_F".
 Arsenal_typename = "B_supplyCrate_F";									// This is the virtual arsenal as portable supply crates.  																				Default is "B_supplyCrate_F".
-Respawn_truck_typename = "fow_v_type97_truck_open_ija";						// This is the mobile respawn (and medical) truck. 																						Default is "B_Truck_01_medical_F".
-huron_typename = "fow_v_type97_truck_fuel_ija";						// This is Spartan 01, a multipurpose mobile respawn as a helicopter. 																	Default is "B_Heli_Transport_03_unarmed_F".
+Respawn_truck_typename = "fow_v_type97_truck_ija";						// This is the mobile respawn (and medical) truck. 																						Default is "B_Truck_01_medical_F".
+huron_typename = "fow_v_type95_HaGo";						// This is Spartan 01, a multipurpose mobile respawn as a helicopter. 																	Default is "B_Heli_Transport_03_unarmed_F".
 crewman_classname = "fow_s_ija_crewman";											// This defines the crew for vehicles. 																									Default is "B_crew_F".
 pilot_classname = "fow_s_ija_pilot";										// This defines the pilot for helicopters. 																								Default is "B_Helipilot_F".
 KP_liberation_little_bird_classname = "B_Heli_Light_01_F"; 				// These are the little birds which spawn on the Freedom or at Chimera base.															Default is "B_Heli_Light_01_F".
@@ -51,10 +51,8 @@ light_vehicles = [
 	["fow_v_type97_truck_ija",30,0,10]
 ];
 
-heavy_vehicles = [
-	["fow_ija_type95_HaGo_3_ija",100,15,30],									//M113A3 (M2)
-	["fow_ija_type95_HaGo_1_ija",100,15,30],								//M113A3 (Mk19)
-	["fow_ija_type95_HaGo_2_ija",100,15,30]
+heavy_vehicles = [									//M113A3 (M2)
+	["fow_v_type95_HaGo",100,15,30]								//M113A3 (Mk19)
 ];
 
 air_vehicles = [
@@ -145,8 +143,7 @@ support_vehicles = [
 	["ACE_Box_82mm_Mo_Smoke",50,10,0],
 	["ACE_Box_82mm_Mo_Illum",50,10,0],
 	["ACE_Wheel",1,0,0],
-	["ACE_Track",1,0,0],
-	["fow_ija_type95_HaGo_1_ija",200,0,20],					//M977A4 Repair
+	["ACE_Track",1,0,0],			//M977A4 Repair
 	["fow_v_type97_truck_fuel_ija",70,0,150],
 	["fow_v_type97_truck_utility_ija",70,50,20],
 	["B_Slingload_01_Ammo_F",1,0,0],
