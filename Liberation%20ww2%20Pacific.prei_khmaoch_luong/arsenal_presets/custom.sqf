@@ -102,5 +102,6 @@ GRLIB_arsenal_backpacks = [
 	"fow_b_ija_backpack_rifleman",
 	"fow_b_ija_type97_mortar_adv_weapon",
 	"fow_b_ija_type97_mortar_support",
-	"fow_b_ija_type97_mortar_weapon"
+	"fow_b_ija_type97_mortar_weapon",
+	"B_Respawn_TentDome_F"
 ];
