@@ -3,8 +3,8 @@ private [ "_accelerated_time" ];
 while { true } do {
 	if ( GRLIB_shorter_nights && ( daytime > 19 || daytime < 5 ) ) then {
 		_accelerated_time = GRLIB_time_factor * 3;
-		if ( _accelerated_time > 160 ) then {
-			_accelerated_time = 160;
+		if ( _accelerated_time > 200 ) then {
+			_accelerated_time = 200;
 		};
 		setTimeMultiplier _accelerated_time;
 	} else {
